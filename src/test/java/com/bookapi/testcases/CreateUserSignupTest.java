@@ -12,6 +12,8 @@ import com.bookapi.specBuilder.RequestBuilder;
 import com.bookapi.test.constants.EndPoints;
 import com.bookapi.test.utils.DataGenerator;
 
+import io.restassured.response.Response;
+
 public class CreateUserSignupTest {
 	public static String newEmail;
 	public static int newId;
@@ -32,8 +34,15 @@ public class CreateUserSignupTest {
 		WrappedReportLogger.trace("Created Sign Up Request with random email as "+newEmail+" and random ID as "+newId+"!!!!");
 		
 		WrappedReportLogger.trace("Creating a new user....");
-		Message messageResponse=ApiClient.post(RequestBuilder.withBodyAndNoAuthToken(createUserSignupRequest,null, null), EndPoints.SIGNUP, 200, "Message.json").as(Message.class);
+		
+		Response response=ApiClient.post(RequestBuilder.withBodyAndNoAuthToken(createUserSignupRequest,null, null), EndPoints.SIGNUP, 200, "Message.json");
+
+		Message messageResponse=response.as(Message.class);
 		WrappedAssert.assertEquals( messageResponse.getMessage(), "User created successfully", "Validating message value");
+		
+		WrappedAssert.assertEquals(response.getHeader("server"), "uvicorn", "Validating Server header");
+	    WrappedAssert.assertEquals(response.getHeader("content-type"), "application/json", "Validating Content-Type header");
+
 		WrappedReportLogger.trace("Created a new user!!!!");
 		
 		

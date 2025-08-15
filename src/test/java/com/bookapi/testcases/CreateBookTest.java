@@ -14,6 +14,8 @@ import com.bookapi.specBuilder.RequestBuilder;
 import com.bookapi.test.constants.EndPoints;
 import com.bookapi.test.utils.DataGenerator;
 
+import io.restassured.response.Response;
+
 public class CreateBookTest {
 	public static int newBookId;
 	public static int newPublishedYear;
@@ -31,8 +33,13 @@ public class CreateBookTest {
 		createBook.setBook_summary("Medieval Fiction about a continent of Westeros.");
 		createBook.setPublished_year(newPublishedYear);
 		
-		GetBook getBook=ApiClient.post(RequestBuilder.withBodyAndAuthToken(createBook, LoginForAccessTokenTest.access_token, null, null), EndPoints.CREATE_BOOK, 200,
-				"GetBook.json").as(GetBook.class);
+		Response response=ApiClient.post(RequestBuilder.withBodyAndAuthToken(createBook, LoginForAccessTokenTest.access_token, null, null), EndPoints.CREATE_BOOK, 200,
+				"GetBook.json");
+		
+
+		WrappedAssert.assertEquals(response.getHeader("server"), "uvicorn", "Validating Server header");
+	    WrappedAssert.assertEquals(response.getHeader("content-type"), "application/json", "Validating Content-Type header");
+
 		
 		WrappedReportLogger.trace("new book has been creation!!!");
 	

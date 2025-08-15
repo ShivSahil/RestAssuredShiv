@@ -13,6 +13,8 @@ import com.bookapi.specBuilder.ApiClient;
 import com.bookapi.specBuilder.RequestBuilder;
 import com.bookapi.test.constants.EndPoints;
 
+import io.restassured.response.Response;
+
 public class UpdateBookTest {
 
 	
@@ -30,9 +32,15 @@ public class UpdateBookTest {
 		Map<String, Object> pathParams = new HashMap<>();
 		pathParams.put("bookId", CreateBookTest.newBookId);
 		
-		GetBook getBook=ApiClient.put(RequestBuilder.withBodyAndAuthToken(updateBook,LoginForAccessTokenTest.access_token, null, pathParams), EndPoints.UPDATE_BOOK, 200, "GetBook.json").as(GetBook.class);
-		WrappedAssert.assertEquals("updated Author Name", getBook.getAuthor(), "validating if book with ID"+CreateBookTest.newBookId+" name has beeen updated");
+		Response response=ApiClient.put(RequestBuilder.withBodyAndAuthToken(updateBook,LoginForAccessTokenTest.access_token, null, pathParams), EndPoints.UPDATE_BOOK, 200, "GetBook.json");
 		
+		
+		GetBook getBook=response.as(GetBook.class);
+		WrappedAssert.assertEquals("updated Author Name", getBook.getAuthor(), "validating if book with ID"+CreateBookTest.newBookId+" name has beeen updated");
+		WrappedAssert.assertEquals(response.getHeader("server"), "uvicorn", "Validating Server header");
+	    WrappedAssert.assertEquals(response.getHeader("content-type"), "application/json", "Validating Content-Type header");
+
+	    
 		WrappedReportLogger.trace("Validated user is able to update the book with ID "+CreateBookTest.newBookId+"!!!!");
 		
 	}
