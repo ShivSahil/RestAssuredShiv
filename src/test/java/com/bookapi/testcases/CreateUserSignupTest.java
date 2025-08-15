@@ -2,7 +2,7 @@ package com.bookapi.testcases;
 
 import org.testng.annotations.Test;
 
-import com.bookapi.logs.WrappedAssert;
+import com.bookapi.assertions.WrappedAssert;
 import com.bookapi.logs.WrappedReportLogger;
 import com.bookapi.pojo.request.CreateUserSignup;
 import com.bookapi.pojo.response.Detail;
@@ -37,9 +37,6 @@ public class CreateUserSignupTest {
 		WrappedReportLogger.trace("Created a new user!!!!");
 		
 		
-		WrappedReportLogger.debug("Request:"+createUserSignupRequest);
-		WrappedReportLogger.debug("Response:"+messageResponse);
-		
 		}
 	
 	
@@ -55,9 +52,6 @@ public class CreateUserSignupTest {
 		Detail detailResponse=ApiClient.post(RequestBuilder.withBodyAndNoAuthToken(createUserSignupRequest,null, null), EndPoints.SIGNUP, 400, "Detail.json").as(Detail.class);
 		WrappedAssert.assertEquals( detailResponse.getDetail(), "Email already registered", "Validating detail value");
 		WrappedReportLogger.trace("Unable to add an existing user!!!!");
-		
-		WrappedReportLogger.debug("Request:"+createUserSignupRequest);
-		WrappedReportLogger.debug("Response:"+detailResponse);
 		
 		
 	}

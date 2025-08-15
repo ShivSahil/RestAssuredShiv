@@ -3,7 +3,7 @@ package com.bookapi.testcases;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.bookapi.logs.WrappedAssert;
+import com.bookapi.assertions.WrappedAssert;
 import com.bookapi.logs.WrappedReportLogger;
 import com.bookapi.pojo.request.LoginForAccessTokenRequest;
 import com.bookapi.pojo.response.Detail;
@@ -33,9 +33,6 @@ public class LoginForAccessTokenTest {
 		
 		access_token=loginForAccessTokenResponse.getAccess_token();
 		
-		WrappedReportLogger.debug("Request:"+loginForAccessTokenRequest);
-		WrappedReportLogger.debug("Response:"+loginForAccessTokenResponse);
-		
 		}
 	
 	@Test(priority=5, description = "NEGATIVE: Login using incorrect credentails", dataProvider = "setOfInvalidCreds")
@@ -51,8 +48,6 @@ public class LoginForAccessTokenTest {
 		WrappedAssert.assertEquals( detailResponse.getDetail(), "Incorrect email or password", "Validating detail value");
 		WrappedReportLogger.trace("User unable to login using incorrect credentails!!!!");
 		
-		WrappedReportLogger.debug("Request:"+loginForAccessTokenRequest);
-		WrappedReportLogger.debug("Response:"+detailResponse);
 		
 		
 	}

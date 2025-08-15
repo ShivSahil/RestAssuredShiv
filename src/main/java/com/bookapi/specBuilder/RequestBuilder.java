@@ -10,6 +10,7 @@ import io.restassured.specification.RequestSpecification;
 
 public class RequestBuilder {
 	
+	
     public static RequestSpecification defaultSpec() {
         return new RequestSpecBuilder()
         		 .setBaseUri(ConfigurationManager.get("url"))
@@ -68,34 +69,7 @@ public class RequestBuilder {
 
         return builder.build();
     }
-    
-//  public static RequestSpecification withAuthToken(String token) {
-//  RequestSpecBuilder builder = new RequestSpecBuilder()
-//          .setBaseUri(ConfigurationManager.get("url"))
-//          .addHeader("Authorization", "Bearer " + token);
-//  return builder.build();
-//}
-    
-//  public static RequestSpecification withBodyAndNoAuthToken(Object body) {
-//  RequestSpecBuilder builder = new RequestSpecBuilder()
-//          .setBaseUri(ConfigurationManager.get("url"))
-//          .setContentType(ContentType.JSON)
-//          .setBody(body);
-//
-//  return builder.build();
-//}
-    
-//    public static RequestSpecification withBodyAndAuthToken(Object body, String token) {
-//        RequestSpecBuilder builder = new RequestSpecBuilder()
-//                .setBaseUri(ConfigurationManager.get("url"))
-//                .setContentType(ContentType.JSON)
-//                .setBody(body)
-//                .addHeader("Authorization", "Bearer " + token)
-//                .addHeader("Accept", "application/json");
-//
-//        return builder.build();
-//    }
 
-
+   
 
 }

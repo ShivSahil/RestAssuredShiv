@@ -1,8 +1,6 @@
 package com.bookapi.specBuilder;
 
-import java.io.InputStream;
-
-import com.bookapi.logs.WrappedAssert;
+import com.bookapi.assertions.WrappedAssert;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

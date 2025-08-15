@@ -48,14 +48,5 @@ public class CreateBook {
 	}
 
 	
-	public String toString() {
-	    return "{\n" +
-	           "  \"id\": " + id + ",\n" +
-	           "  \"name\": \"" + name + "\",\n" +
-	           "  \"author\": \"" + author + "\",\n" +
-	           "  \"published_year\": " + published_year + ",\n" +
-	           "  \"book_summary\": \"" + book_summary + "\"\n" +
-	           "}";
-	}
 
 }

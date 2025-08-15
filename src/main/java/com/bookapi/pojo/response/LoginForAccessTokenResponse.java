@@ -21,12 +21,6 @@ public class LoginForAccessTokenResponse {
 		this.token_type = token_type;
 	}
 
-	
-	public String toString() {
-	    return "{\n" +
-	           "  \"access_token\": \"" + access_token + "\",\n" +
-	           "  \"token_type\": \"" + token_type + "\"\n" +
-	           "}";
-	}
+
 
 }

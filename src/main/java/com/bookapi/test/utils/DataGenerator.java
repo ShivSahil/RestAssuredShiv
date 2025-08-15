@@ -1,8 +1,5 @@
 package com.bookapi.test.utils;
 
-import java.time.Year;
-import java.util.Random;
-
 public class DataGenerator {
 
 	public static String randomEmail() {

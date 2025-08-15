@@ -11,11 +11,6 @@ public class GetHealth {
 		this.status = status;
 	}
 	
-	 
-	    public String toString() {
-	        return "{\n" +
-	               "  \"status\": \"" + status + "\"\n" +
-	               "}";
-	    }
+
 	
 }

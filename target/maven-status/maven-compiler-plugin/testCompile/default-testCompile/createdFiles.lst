@@ -1,0 +1,8 @@
+com\bookapi\testcases\DeleteBookTest.class
+com\bookapi\testcases\LoginForAccessTokenTest.class
+com\bookapi\testcases\CreateBookTest.class
+com\bookapi\testcases\UpdateBookTest.class
+com\bookapi\testcases\HealthCheckTest.class
+com\bookapi\testcases\GetBookByIdTest.class
+com\bookapi\testcases\CreateUserSignupTest.class
+com\bookapi\testcases\GetAllBooksTest.class

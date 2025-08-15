@@ -2,7 +2,7 @@ package com.bookapi.testcases;
 
 import org.testng.annotations.Test;
 
-import com.bookapi.logs.WrappedAssert;
+import com.bookapi.assertions.WrappedAssert;
 import com.bookapi.logs.WrappedReportLogger;
 import com.bookapi.pojo.response.Detail;
 import com.bookapi.specBuilder.ApiClient;

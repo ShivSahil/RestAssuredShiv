@@ -31,12 +31,4 @@ public class LoginForAccessTokenRequest {
 	}
 	
 	
-	public String toString() {
-		 return "{\n" +
-		           "  \"id\": " + id + ",\n" +
-		           "  \"email\": \"" + email + "\",\n" +
-		           "  \"password\": \"" + password + "\"\n" +
-		           "}";
-	}
-
 }

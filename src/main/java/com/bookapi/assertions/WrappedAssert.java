@@ -1,10 +1,9 @@
-package com.bookapi.logs;
-
-import java.io.InputStream;
+package com.bookapi.assertions;
 
 import org.testng.Assert;
 
 import com.aventstack.extentreports.Status;
+import com.bookapi.logs.WrappedReportLogger;
 import com.bookapi.report.ExtentFactory;
 import com.bookapi.specBuilder.ApiClient;
 

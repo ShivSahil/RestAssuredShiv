@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.testng.annotations.Test;
 
-import com.bookapi.logs.WrappedAssert;
+import com.bookapi.assertions.WrappedAssert;
 import com.bookapi.logs.WrappedReportLogger;
 import com.bookapi.pojo.request.CreateBook;
 import com.bookapi.pojo.response.GetBook;
@@ -35,10 +35,7 @@ public class CreateBookTest {
 				"GetBook.json").as(GetBook.class);
 		
 		WrappedReportLogger.trace("new book has been creation!!!");
-		
-		WrappedReportLogger.debug("Request:"+createBook);
-		WrappedReportLogger.debug("Response:"+getBook);
-
+	
 	}
 	
 	@Test(priority = 10, description = "Validating if newly created book is displayed in the list of all the books", dependsOnMethods = "validatingUserAbleToCreateNewBook")

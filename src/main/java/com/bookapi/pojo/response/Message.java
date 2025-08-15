@@ -12,11 +12,5 @@ public class Message {
 		this.message = message;
 	}
 	
-	
-	public String toString() {
-	    return "{\n" +
-	           "  \"message\": \"" + message + "\"\n" +
-	           "}";
-	}
 
 }

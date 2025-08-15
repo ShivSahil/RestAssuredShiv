@@ -20,11 +20,6 @@ public class ExtentFactory implements ITestListener {
 	private static ExtentReports report;
 	private static ExtentFactory instance = new ExtentFactory();
 
-//	// class with private constructor can not be initialized
-//	private ExtentFactory() { 
-//	}
-
-	// ONLY ONE instance of extentfactory class exists
 	public static ExtentFactory getInstance() {
 		return instance;
 	} 

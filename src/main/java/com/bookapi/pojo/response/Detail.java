@@ -12,11 +12,6 @@ public class Detail {
 		this.detail = detail;
 	}
 	
-	  
-	    public String toString() {
-	        return "{\n" +
-	               "  \"detail\": \"" + detail + "\"\n" +
-	               "}";
-	    }
+
 
 }

@@ -13,8 +13,5 @@ public class GetAllBooks {
 		this.books = books;
 	}
 
-	
-	public String toString() {
-		return "GetAllBooks{books=" + books + "}";
-	}
+
 }
