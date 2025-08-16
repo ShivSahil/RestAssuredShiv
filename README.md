@@ -25,9 +25,13 @@
 ## sample Report
 [Download Sample Report](./report/Sample_15_August_10_pm_37_13_Report.html)
 
-## Covered Validation
+## Validation Covered
+Validation is handled through the *WrappedAssert* class, which extends TestNG’s built-in assertions with Log4j and ExtentReports integration.
 
-1. Header validation is covered
+1. Header and body validations are covered within the test cases.
+2. Schema validation is built into the *ApiClient* class.
+3. Status code validation is also built into the *ApiClient* class.
+4. Negative test cases are included as well.
 
 ## FrameWork structure
 ```
