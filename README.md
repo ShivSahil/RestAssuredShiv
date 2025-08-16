@@ -34,7 +34,7 @@ Validation is handled through the *WrappedAssert* class, which extends TestNG’
 4. Negative test cases are included as well.
 
 
-## Project Structure & Implementation Details
+## Project Structure Implementation Details
 
 - Each API request is mapped to a corresponding **test class** with the same name.  
   Example: *Get All Books* request is tested in **`GetAllBooksTest.java`**.
@@ -83,6 +83,14 @@ Validation is handled through the *WrappedAssert* class, which extends TestNG’
   - `Password`  
 - Supported environments: **QA**, **DEV**, **PROD**.
 
+
+## Testing Strategy 
+- request chainging was done for shairing token, new email, new pwd.
+- POJO classes used for searlization and desearlization
+- in each testcases Logging was done. this outputed details on Console and report
+- Negative testcases are covered.
+- validation of Body, header, status code, schema is also covered.
+- @DataProvider is to supply multiple input sets for test cases.
 
 ## FrameWork structure
 ```
