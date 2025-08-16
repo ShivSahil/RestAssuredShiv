@@ -66,3 +66,18 @@ src/test/java/
 config.properties                       
 pom.xml                                     
 testng.xml
+
+
+## All the tools used
+
+- Maven 3.8.4+
+- Java 17+
+- Git
+- Any IDE (e.g., IntelliJ IDEA, Eclipse, VS Code)
+- RestAssured
+- TestNG
+- log4j2
+- ExtentReports
+- GitHub Actions: CI/CD pipeline for automated testing and deployment
+
+
