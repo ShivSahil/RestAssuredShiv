@@ -43,40 +43,40 @@ Validation is handled through the *WrappedAssert* class, which extends TestNG’
 
 - **POJO classes** are used for serialization and deserialization of request and response bodies.
 
-### Request Chaining
+#### Request Chaining
 - The token generated from a **login request** is reused across subsequent requests.  
 - Newly created **username and password** are also reused in other requests.  
 - **`dependsOnGroups`** and **`dependsOnMethods`** annotations ensure proper test execution order.
 
-### Logging
+#### Logging
 - Test cases use **`WrappedReportLogger`** for logging.  
 - Logs are displayed on the **console** and also captured in the **Extent Report**.
 
-### ApiClient
+#### ApiClient
 - Handles sending HTTP requests: `GET`, `POST`, `PUT`, `DELETE`.  
 - Validates responses against:
   - **Status codes**  
   - **JSON schemas**  
 - Internally uses **`WrappedAssert`** for assertions.
 
-### RequestBuilder
+#### RequestBuilder
 - Provides reusable request specifications.  
 - Supports different combinations such as:
   - With Auth Token  
   - With Body (without Auth Token)  
 - Accepts **path parameters** and **query parameters**.
 
-### Data-Driven Testing
+#### Data-Driven Testing
 - Implemented using **`@DataProvider`** to supply multiple input sets for test cases.
 
-### Assertions
+#### Assertions
 - Standard assertions: `assertEquals`, `assertNotNull`, `assertTrue`.  
 - Schema validation (`assertJsonSchema`) and status code checks are built into **`ApiClient`**.
 
-### Schema Management
+#### Schema Management
 - JSON Schemas for expected responses are stored in a **dedicated folder** for better organization.
 
-### EnvConfigResolver
+#### EnvConfigResolver
 - The **`EnvConfigResolver`** class dynamically resolves environment-specific configurations:
   - `URL`  
   - `Email`  
