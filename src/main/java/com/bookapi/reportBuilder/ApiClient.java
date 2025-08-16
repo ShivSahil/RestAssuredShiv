@@ -1,4 +1,4 @@
-package com.bookapi.specBuilder;
+package com.bookapi.reportBuilder;
 
 import com.bookapi.assertions.WrappedAssert;
 

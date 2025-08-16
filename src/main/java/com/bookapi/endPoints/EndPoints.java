@@ -1,4 +1,4 @@
-package com.bookapi.test.constants;
+package com.bookapi.endPoints;
 
 public class EndPoints {
 

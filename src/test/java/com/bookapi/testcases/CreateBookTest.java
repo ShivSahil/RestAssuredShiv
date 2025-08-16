@@ -6,13 +6,13 @@ import java.util.List;
 import org.testng.annotations.Test;
 
 import com.bookapi.assertions.WrappedAssert;
+import com.bookapi.endPoints.EndPoints;
 import com.bookapi.logs.WrappedReportLogger;
 import com.bookapi.pojo.request.CreateBook;
 import com.bookapi.pojo.response.GetBook;
-import com.bookapi.specBuilder.ApiClient;
-import com.bookapi.specBuilder.RequestBuilder;
-import com.bookapi.test.constants.EndPoints;
-import com.bookapi.test.utils.DataGenerator;
+import com.bookapi.reportBuilder.ApiClient;
+import com.bookapi.reportBuilder.RequestBuilder;
+import com.bookapi.utils.DataGenerator;
 
 import io.restassured.response.Response;
 

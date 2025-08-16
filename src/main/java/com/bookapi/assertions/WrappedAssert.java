@@ -5,7 +5,7 @@ import org.testng.Assert;
 import com.aventstack.extentreports.Status;
 import com.bookapi.logs.WrappedReportLogger;
 import com.bookapi.report.ExtentFactory;
-import com.bookapi.specBuilder.ApiClient;
+import com.bookapi.reportBuilder.ApiClient;
 
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;

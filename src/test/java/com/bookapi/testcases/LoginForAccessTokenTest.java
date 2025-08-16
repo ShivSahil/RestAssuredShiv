@@ -4,13 +4,13 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.bookapi.assertions.WrappedAssert;
+import com.bookapi.endPoints.EndPoints;
 import com.bookapi.logs.WrappedReportLogger;
 import com.bookapi.pojo.request.LoginForAccessTokenRequest;
 import com.bookapi.pojo.response.Detail;
 import com.bookapi.pojo.response.LoginForAccessTokenResponse;
-import com.bookapi.specBuilder.ApiClient;
-import com.bookapi.specBuilder.RequestBuilder;
-import com.bookapi.test.constants.EndPoints;
+import com.bookapi.reportBuilder.ApiClient;
+import com.bookapi.reportBuilder.RequestBuilder;
 
 public class LoginForAccessTokenTest {
 	public static String access_token;

@@ -1,8 +1,8 @@
-package com.bookapi.specBuilder;
+package com.bookapi.reportBuilder;
 
 import java.util.Map;
 
-import com.bookapi.test.utils.EnvConfigResolver;
+import com.bookapi.utils.EnvConfigResolver;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;

@@ -1,4 +1,4 @@
-package com.bookapi.test.utils;
+package com.bookapi.utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;

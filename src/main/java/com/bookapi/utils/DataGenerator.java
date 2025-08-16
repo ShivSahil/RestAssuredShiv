@@ -1,4 +1,4 @@
-package com.bookapi.test.utils;
+package com.bookapi.utils;
 
 public class DataGenerator {
 

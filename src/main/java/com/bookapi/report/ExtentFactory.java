@@ -38,8 +38,8 @@ public class ExtentFactory implements ITestListener {
 		String path = Paths.get(System.getProperty("user.dir"), "report", name + "_Report.html").toString();
 
 		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
-		reporter.config().setReportName("Name of Report created by Shiv Sahil Guleri");
-		reporter.config().setDocumentTitle("Title of page created by Shiv Sahil Guleri");
+		reporter.config().setReportName("Report by Shiv Sahil Guleri");
+		reporter.config().setDocumentTitle("RestAssured by Shiv Sahil Guleri");
 
 		report = new ExtentReports();
 		report.attachReporter(reporter);
@@ -47,6 +47,7 @@ public class ExtentFactory implements ITestListener {
 		// replace with them with data from config.properties
 		report.setSystemInfo("Automation Tester", "Shiv Sahil Guleri");
 		report.setSystemInfo("Contact Details", "+91 8209060559");
+		report.setSystemInfo("email ID", "sahilguleri.9@gmail.com");
 
 	}
 

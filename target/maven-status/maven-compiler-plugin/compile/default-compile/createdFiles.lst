@@ -15,5 +15,6 @@ com\bookapi\test\utils\ConfigurationManager.class
 com\bookapi\pojo\response\GetHealth.class
 com\bookapi\logs\WrappedReportLogger.class
 com\bookapi\report\ExtentFactory.class
+com\bookapi\test\utils\EnvConfigResolver.class
 com\bookapi\pojo\response\Detail.class
 com\bookapi\test\utils\DataGenerator.class
