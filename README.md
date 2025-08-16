@@ -19,7 +19,7 @@
 2. Run the Scenarios
    ```bash
    mvn clean test
-3. to see report. Reports are generated with a time stamped named for easy identification
+3.  Reports are generated with a time stamped named for easy identification
    cd RestAssuredShiv/report
 
 ## Sample Report
