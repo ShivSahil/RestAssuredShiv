@@ -27,8 +27,7 @@ public class LoginForAccessTokenTest {
 		
 		WrappedAssert.assertEquals( loginForAccessTokenResponse.getToken_type(), "bearer", "Validating token type value");
 		WrappedAssert.assertNotNull( loginForAccessTokenResponse.getAccess_token(), "Validating if access token is not null string");
-		
-		
+
 		WrappedReportLogger.trace("Logged in using newly created user!!!!");
 		
 		access_token=loginForAccessTokenResponse.getAccess_token();
@@ -47,9 +46,6 @@ public class LoginForAccessTokenTest {
 		Detail detailResponse=ApiClient.post(RequestBuilder.withBodyAndNoAuthToken(loginForAccessTokenRequest,null, null), EndPoints.LOGIN, 400, "Detail.json").as(Detail.class);
 		WrappedAssert.assertEquals( detailResponse.getDetail(), "Incorrect email or password", "Validating detail value");
 		WrappedReportLogger.trace("User unable to login using incorrect credentails!!!!");
-		
-		
-		
 	}
 	
 	@DataProvider(name="setOfInvalidCreds") 

@@ -1,5 +1,6 @@
 package com.bookapi.testcases;
 
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.bookapi.assertions.WrappedAssert;
@@ -13,7 +14,6 @@ import io.restassured.response.Response;
 
 public class HealthCheckTest {
 
-	// converted this to before test
 	
 	@Test(priority=1, description = "PreRequiste- Validating if Server is up and running.")
 	   public void validatingServiceHealth() {

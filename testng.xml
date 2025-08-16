@@ -13,6 +13,7 @@
 			<class name="com.bookapi.testcases.GetBookByIdTest" />
 			<class name="com.bookapi.testcases.UpdateBookTest" />
 			<class name="com.bookapi.testcases.DeleteBookTest" />
+			<class name="com.bookapi.testcases.IncorrectJsonFormat" />
 		</classes>
 	</test>
 </suite>

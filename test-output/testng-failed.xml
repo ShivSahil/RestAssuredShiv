@@ -8,7 +8,7 @@
     <classes>
       <class name="com.bookapi.testcases.LoginForAccessTokenTest">
         <methods>
-          <include name="loginUsingIncorrectCred" invocation-numbers="0 1 2 3"/>
+          <include name="loginUsingIncorrectCred"/>
           <include name="loginUsingnewlyCreatedUser"/>
         </methods>
       </class> <!-- com.bookapi.testcases.LoginForAccessTokenTest -->
@@ -48,6 +48,11 @@
           <include name="NoBooksDisplayedForNoToken"/>
         </methods>
       </class> <!-- com.bookapi.testcases.GetAllBooksTest -->
+      <class name="com.bookapi.testcases.IncorrectJsonFormat">
+        <methods>
+          <include name="incorrectJSON"/>
+        </methods>
+      </class> <!-- com.bookapi.testcases.IncorrectJsonFormat -->
       <class name="com.bookapi.testcases.CreateBookTest">
         <methods>
           <include name="validatingNewBookIsDisplayedInList"/>

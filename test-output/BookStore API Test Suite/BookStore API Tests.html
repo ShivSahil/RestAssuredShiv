@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>BookStore API Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>19/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/19</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 15 22:34:58 IST 2025</td>
+<td>Started on:</td><td>Sat Aug 16 13:09:44 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4828 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (994 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,100 +76,702 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bookapi.testcases.DeleteBookTest.validatingIfUserAbleToDeleteBookByIDAgain()'><b>validatingIfUserAbleToDeleteBookByIDAgain</b><br>Test class: com.bookapi.testcases.DeleteBookTest<br>Test method: NEGATIVE: againDelating newly created book can be searched using ID</td>
-<td></td>
+<td title='com.bookapi.testcases.HealthCheckTest.validatingServiceHealth()'><b>validatingServiceHealth</b><br>Test class: com.bookapi.testcases.HealthCheckTest<br>Test method: PreRequiste- Validating if Server is up and running.</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace840514538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace840514538'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>0</td>
-<td>com.bookapi.testcases.DeleteBookTest@15bb5034</td></tr>
-<tr>
-<td title='com.bookapi.testcases.CreateUserSignupTest.createNewUser()'><b>createNewUser</b><br>Test class: com.bookapi.testcases.CreateUserSignupTest<br>Test method: Validating creation of new user</td>
-<td></td>
-<td>0</td>
-<td>com.bookapi.testcases.CreateUserSignupTest@449a4f23</td></tr>
-<tr>
-<td title='com.bookapi.testcases.GetBookByIdTest.validatingIfUserAbleToSearchIncorrectBookByID()'><b>validatingIfUserAbleToSearchIncorrectBookByID</b><br>Test class: com.bookapi.testcases.GetBookByIdTest<br>Test method: NEGATIVE: Validating user unable to search a book with incorrect ID</td>
-<td></td>
-<td>0</td>
-<td>com.bookapi.testcases.GetBookByIdTest@6e9175d8</td></tr>
-<tr>
-<td title='com.bookapi.testcases.LoginForAccessTokenTest.loginUsingIncorrectCred()'><b>loginUsingIncorrectCred</b><br>Test class: com.bookapi.testcases.LoginForAccessTokenTest<br>Test method: NEGATIVE: Login using incorrect credentails<br>Parameters: user3372@example.com, </td>
-<td></td>
-<td>0</td>
-<td>com.bookapi.testcases.LoginForAccessTokenTest@1530c739</td></tr>
-<tr>
-<td title='com.bookapi.testcases.CreateBookTest.validatingNewBookIsDisplayedInList()'><b>validatingNewBookIsDisplayedInList</b><br>Test class: com.bookapi.testcases.CreateBookTest<br>Test method: Validating if newly created book is displayed in the list of all the books</td>
-<td></td>
-<td>0</td>
-<td>com.bookapi.testcases.CreateBookTest@78e4deb0</td></tr>
+<td>com.bookapi.testcases.HealthCheckTest@7161d8d1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='com.bookapi.testcases.GetBookByIdTest.validatingIfUserAbleToSearchBookByID()'><b>validatingIfUserAbleToSearchBookByID</b><br>Test class: com.bookapi.testcases.GetBookByIdTest<br>Test method: Validating newly created book can be searched using ID</td>
-<td></td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1515116175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1515116175'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>0</td>
-<td>com.bookapi.testcases.GetBookByIdTest@6e9175d8</td></tr>
-<tr>
-<td title='com.bookapi.testcases.GetAllBooksTest.NoBooksDisplayedForNoToken()'><b>NoBooksDisplayedForNoToken</b><br>Test class: com.bookapi.testcases.GetAllBooksTest<br>Test method: NEGATIVE: Validating if books are displayed when no token used</td>
-<td></td>
-<td>0</td>
-<td>com.bookapi.testcases.GetAllBooksTest@5b1669c0</td></tr>
-<tr>
-<td title='com.bookapi.testcases.DeleteBookTest.validatingIfUserAbleToDeleteBookByID()'><b>validatingIfUserAbleToDeleteBookByID</b><br>Test class: com.bookapi.testcases.DeleteBookTest<br>Test method: Delating newly created book can be searched using ID</td>
-<td></td>
-<td>0</td>
-<td>com.bookapi.testcases.DeleteBookTest@15bb5034</td></tr>
-<tr>
-<td title='com.bookapi.testcases.CreateUserSignupTest.createExistingUser()'><b>createExistingUser</b><br>Test class: com.bookapi.testcases.CreateUserSignupTest<br>Test method: NEGATIVE: Validating creation of new user with existing email and id</td>
-<td></td>
-<td>0</td>
-<td>com.bookapi.testcases.CreateUserSignupTest@449a4f23</td></tr>
-<tr>
-<td title='com.bookapi.testcases.CreateBookTest.validatingUserAbleToCreateNewBook()'><b>validatingUserAbleToCreateNewBook</b><br>Test class: com.bookapi.testcases.CreateBookTest<br>Test method: Validating if user able to create a book</td>
-<td></td>
-<td>0</td>
-<td>com.bookapi.testcases.CreateBookTest@78e4deb0</td></tr>
-<tr>
-<td title='com.bookapi.testcases.UpdateBookTest.validateUserAbleToUpdateNewlyAddedBook()'><b>validateUserAbleToUpdateNewlyAddedBook</b><br>Test class: com.bookapi.testcases.UpdateBookTest<br>Test method: Updating newly added book</td>
-<td></td>
-<td>0</td>
-<td>com.bookapi.testcases.UpdateBookTest@7d0b7e3c</td></tr>
+<td>com.bookapi.testcases.GetBookByIdTest@196a42c3</td></tr>
 <tr>
 <td title='com.bookapi.testcases.GetAllBooksTest.NoBooksDisplayedForInvalidToken()'><b>NoBooksDisplayedForInvalidToken</b><br>Test class: com.bookapi.testcases.GetAllBooksTest<br>Test method: NEGATIVE: Validating if books are not displayed when invalid token used</td>
-<td></td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace450589816", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace450589816'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>0</td>
-<td>com.bookapi.testcases.GetAllBooksTest@5b1669c0</td></tr>
+<td>com.bookapi.testcases.GetAllBooksTest@17f9d882</td></tr>
 <tr>
-<td title='com.bookapi.testcases.GetAllBooksTest.validatingBooksAreDisplayed()'><b>validatingBooksAreDisplayed</b><br>Test class: com.bookapi.testcases.GetAllBooksTest<br>Test method: Validating if books are displayed</td>
-<td></td>
+<td title='com.bookapi.testcases.GetAllBooksTest.NoBooksDisplayedForNoToken()'><b>NoBooksDisplayedForNoToken</b><br>Test class: com.bookapi.testcases.GetAllBooksTest<br>Test method: NEGATIVE: Validating if books are displayed when no token used</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace988179589", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace988179589'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>0</td>
-<td>com.bookapi.testcases.GetAllBooksTest@5b1669c0</td></tr>
+<td>com.bookapi.testcases.GetAllBooksTest@17f9d882</td></tr>
 <tr>
-<td title='com.bookapi.testcases.LoginForAccessTokenTest.loginUsingIncorrectCred()'><b>loginUsingIncorrectCred</b><br>Test class: com.bookapi.testcases.LoginForAccessTokenTest<br>Test method: NEGATIVE: Login using incorrect credentails<br>Parameters: user3372@example.com, Incorrectpwd</td>
-<td></td>
+<td title='com.bookapi.testcases.CreateBookTest.validatingUserAbleToCreateNewBook()'><b>validatingUserAbleToCreateNewBook</b><br>Test class: com.bookapi.testcases.CreateBookTest<br>Test method: Validating if user able to create a book</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1174714624", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1174714624'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>0</td>
-<td>com.bookapi.testcases.LoginForAccessTokenTest@1530c739</td></tr>
+<td>com.bookapi.testcases.CreateBookTest@79e4c792</td></tr>
+<tr>
+<td title='com.bookapi.testcases.CreateUserSignupTest.createExistingUser()'><b>createExistingUser</b><br>Test class: com.bookapi.testcases.CreateUserSignupTest<br>Test method: NEGATIVE: Validating creation of new user with existing email and id</td>
+<td><div><pre>java.lang.Throwable: Method com.bookapi.testcases.CreateUserSignupTest.createExistingUser() on instance com.bookapi.testcases.CreateUserSignupTest@350aac89 depends on not successfully finished methods 
+[com.bookapi.testcases.CreateUserSignupTest.createNewUser() on instance com.bookapi.testcases.CreateUserSignupTest@350aac89]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1157199772", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1157199772'><pre>java.lang.Throwable: Method com.bookapi.testcases.CreateUserSignupTest.createExistingUser() on instance com.bookapi.testcases.CreateUserSignupTest@350aac89 depends on not successfully finished methods 
+[com.bookapi.testcases.CreateUserSignupTest.createNewUser() on instance com.bookapi.testcases.CreateUserSignupTest@350aac89]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.bookapi.testcases.CreateUserSignupTest@350aac89</td></tr>
+<tr>
+<td title='com.bookapi.testcases.LoginForAccessTokenTest.loginUsingIncorrectCred()'><b>loginUsingIncorrectCred</b><br>Test class: com.bookapi.testcases.LoginForAccessTokenTest<br>Test method: NEGATIVE: Login using incorrect credentails<br>Parameters: null, </td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace75356024", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace75356024'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.bookapi.testcases.LoginForAccessTokenTest@1c5920df</td></tr>
 <tr>
 <td title='com.bookapi.testcases.LoginForAccessTokenTest.loginUsingnewlyCreatedUser()'><b>loginUsingnewlyCreatedUser</b><br>Test class: com.bookapi.testcases.LoginForAccessTokenTest<br>Test method: Login using newly created user</td>
-<td></td>
+<td><div><pre>java.lang.Throwable: Method LoginForAccessTokenTest.loginUsingnewlyCreatedUser()[pri:4, instance:com.bookapi.testcases.LoginForAccessTokenTest@1c5920df] depends on not successfully finished methods in group &quot;userCreation&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1285463992", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1285463992'><pre>java.lang.Throwable: Method LoginForAccessTokenTest.loginUsingnewlyCreatedUser()[pri:4, instance:com.bookapi.testcases.LoginForAccessTokenTest@1c5920df] depends on not successfully finished methods in group &quot;userCreation&quot;
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>0</td>
-<td>com.bookapi.testcases.LoginForAccessTokenTest@1530c739</td></tr>
+<td>com.bookapi.testcases.LoginForAccessTokenTest@1c5920df</td></tr>
+<tr>
+<td title='com.bookapi.testcases.GetAllBooksTest.validatingBooksAreDisplayed()'><b>validatingBooksAreDisplayed</b><br>Test class: com.bookapi.testcases.GetAllBooksTest<br>Test method: Validating if books are displayed</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace296234255", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace296234255'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.bookapi.testcases.GetAllBooksTest@17f9d882</td></tr>
+<tr>
+<td title='com.bookapi.testcases.DeleteBookTest.validatingIfUserAbleToDeleteBookByIDAgain()'><b>validatingIfUserAbleToDeleteBookByIDAgain</b><br>Test class: com.bookapi.testcases.DeleteBookTest<br>Test method: NEGATIVE: againDelating newly created book can be searched using ID</td>
+<td><div><pre>java.lang.Throwable: Method com.bookapi.testcases.DeleteBookTest.validatingIfUserAbleToDeleteBookByIDAgain() on instance com.bookapi.testcases.DeleteBookTest@15043a2f depends on not successfully finished methods 
+[com.bookapi.testcases.DeleteBookTest.validatingIfUserAbleToDeleteBookByID() on instance com.bookapi.testcases.DeleteBookTest@15043a2f]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace334099170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace334099170'><pre>java.lang.Throwable: Method com.bookapi.testcases.DeleteBookTest.validatingIfUserAbleToDeleteBookByIDAgain() on instance com.bookapi.testcases.DeleteBookTest@15043a2f depends on not successfully finished methods 
+[com.bookapi.testcases.DeleteBookTest.validatingIfUserAbleToDeleteBookByID() on instance com.bookapi.testcases.DeleteBookTest@15043a2f]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.bookapi.testcases.DeleteBookTest@15043a2f</td></tr>
+<tr>
+<td title='com.bookapi.testcases.CreateUserSignupTest.createNewUser()'><b>createNewUser</b><br>Test class: com.bookapi.testcases.CreateUserSignupTest<br>Test method: Validating creation of new user</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace511651343", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace511651343'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.bookapi.testcases.CreateUserSignupTest@350aac89</td></tr>
+<tr>
+<td title='com.bookapi.testcases.GetBookByIdTest.validatingIfUserAbleToSearchIncorrectBookByID()'><b>validatingIfUserAbleToSearchIncorrectBookByID</b><br>Test class: com.bookapi.testcases.GetBookByIdTest<br>Test method: NEGATIVE: Validating user unable to search a book with incorrect ID</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace913806791", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace913806791'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.bookapi.testcases.GetBookByIdTest@196a42c3</td></tr>
 <tr>
 <td title='com.bookapi.testcases.UpdateBookTest.validatingIfUserAbleToSearchUpdatedBookByID()'><b>validatingIfUserAbleToSearchUpdatedBookByID</b><br>Test class: com.bookapi.testcases.UpdateBookTest<br>Test method: Validating newly created book can be searched using ID</td>
-<td></td>
+<td><div><pre>java.lang.Throwable: Method com.bookapi.testcases.UpdateBookTest.validatingIfUserAbleToSearchUpdatedBookByID() on instance com.bookapi.testcases.UpdateBookTest@4c60d6e9 depends on not successfully finished methods 
+[com.bookapi.testcases.UpdateBookTest.validateUserAbleToUpdateNewlyAddedBook() on instance com.bookapi.testcases.UpdateBookTest@4c60d6e9]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace533956291", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace533956291'><pre>java.lang.Throwable: Method com.bookapi.testcases.UpdateBookTest.validatingIfUserAbleToSearchUpdatedBookByID() on instance com.bookapi.testcases.UpdateBookTest@4c60d6e9 depends on not successfully finished methods 
+[com.bookapi.testcases.UpdateBookTest.validateUserAbleToUpdateNewlyAddedBook() on instance com.bookapi.testcases.UpdateBookTest@4c60d6e9]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>0</td>
-<td>com.bookapi.testcases.UpdateBookTest@7d0b7e3c</td></tr>
+<td>com.bookapi.testcases.UpdateBookTest@4c60d6e9</td></tr>
 <tr>
-<td title='com.bookapi.testcases.LoginForAccessTokenTest.loginUsingIncorrectCred()'><b>loginUsingIncorrectCred</b><br>Test class: com.bookapi.testcases.LoginForAccessTokenTest<br>Test method: NEGATIVE: Login using incorrect credentails<br>Parameters: IncorrectUser, pwd6741</td>
-<td></td>
+<td title='com.bookapi.testcases.DeleteBookTest.validatingIfUserAbleToDeleteBookByID()'><b>validatingIfUserAbleToDeleteBookByID</b><br>Test class: com.bookapi.testcases.DeleteBookTest<br>Test method: Delating newly created book can be searched using ID</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace43856716", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace43856716'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>0</td>
-<td>com.bookapi.testcases.LoginForAccessTokenTest@1530c739</td></tr>
+<td>com.bookapi.testcases.DeleteBookTest@15043a2f</td></tr>
 <tr>
-<td title='com.bookapi.testcases.HealthCheckTest.validatingServiceHealth()'><b>validatingServiceHealth</b><br>Test class: com.bookapi.testcases.HealthCheckTest<br>Test method: PreRequiste- Validating if Server is up and running.</td>
-<td></td>
-<td>2</td>
-<td>com.bookapi.testcases.HealthCheckTest@2ddc9a9f</td></tr>
-<tr>
-<td title='com.bookapi.testcases.LoginForAccessTokenTest.loginUsingIncorrectCred()'><b>loginUsingIncorrectCred</b><br>Test class: com.bookapi.testcases.LoginForAccessTokenTest<br>Test method: NEGATIVE: Login using incorrect credentails<br>Parameters: , pwd6741</td>
-<td></td>
+<td title='com.bookapi.testcases.UpdateBookTest.validateUserAbleToUpdateNewlyAddedBook()'><b>validateUserAbleToUpdateNewlyAddedBook</b><br>Test class: com.bookapi.testcases.UpdateBookTest<br>Test method: Updating newly added book</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace961983234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace961983234'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>0</td>
-<td>com.bookapi.testcases.LoginForAccessTokenTest@1530c739</td></tr>
+<td>com.bookapi.testcases.UpdateBookTest@4c60d6e9</td></tr>
+<tr>
+<td title='com.bookapi.testcases.LoginForAccessTokenTest.loginUsingIncorrectCred()'><b>loginUsingIncorrectCred</b><br>Test class: com.bookapi.testcases.LoginForAccessTokenTest<br>Test method: NEGATIVE: Login using incorrect credentails<br>Parameters: , null</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1688770224", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1688770224'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.bookapi.testcases.LoginForAccessTokenTest@1c5920df</td></tr>
+<tr>
+<td title='com.bookapi.testcases.IncorrectJsonFormat.incorrectJSON()'><b>incorrectJSON</b><br>Test class: com.bookapi.testcases.IncorrectJsonFormat<br>Test method: Incorrectly formatted JSON file validation</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace215478702", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace215478702'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.bookapi.testcases.IncorrectJsonFormat@4a83a74a</td></tr>
+<tr>
+<td title='com.bookapi.testcases.CreateBookTest.validatingNewBookIsDisplayedInList()'><b>validatingNewBookIsDisplayedInList</b><br>Test class: com.bookapi.testcases.CreateBookTest<br>Test method: Validating if newly created book is displayed in the list of all the books</td>
+<td><div><pre>java.lang.Throwable: Method com.bookapi.testcases.CreateBookTest.validatingNewBookIsDisplayedInList() on instance com.bookapi.testcases.CreateBookTest@79e4c792 depends on not successfully finished methods 
+[com.bookapi.testcases.CreateBookTest.validatingUserAbleToCreateNewBook() on instance com.bookapi.testcases.CreateBookTest@79e4c792]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace238467882", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace238467882'><pre>java.lang.Throwable: Method com.bookapi.testcases.CreateBookTest.validatingNewBookIsDisplayedInList() on instance com.bookapi.testcases.CreateBookTest@79e4c792 depends on not successfully finished methods 
+[com.bookapi.testcases.CreateBookTest.validatingUserAbleToCreateNewBook() on instance com.bookapi.testcases.CreateBookTest@79e4c792]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.bookapi.testcases.CreateBookTest@79e4c792</td></tr>
+<tr>
+<td title='com.bookapi.testcases.LoginForAccessTokenTest.loginUsingIncorrectCred()'><b>loginUsingIncorrectCred</b><br>Test class: com.bookapi.testcases.LoginForAccessTokenTest<br>Test method: NEGATIVE: Login using incorrect credentails<br>Parameters: IncorrectUser, null</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace565079667", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace565079667'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.bookapi.testcases.LoginForAccessTokenTest@1c5920df</td></tr>
+<tr>
+<td title='com.bookapi.testcases.LoginForAccessTokenTest.loginUsingIncorrectCred()'><b>loginUsingIncorrectCred</b><br>Test class: com.bookapi.testcases.LoginForAccessTokenTest<br>Test method: NEGATIVE: Login using incorrect credentails<br>Parameters: null, Incorrectpwd</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13918250", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13918250'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because the return value of &quot;com.bookapi.report.ExtentFactory.getExtentTest()&quot; is null
+	at com.bookapi.logs.WrappedReportLogger.trace(WrappedReportLogger.java:16)
+	at com.bookapi.testcases.HealthCheckTest.validatingServiceHealth(HealthCheckTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.bookapi.testcases.LoginForAccessTokenTest@1c5920df</td></tr>
 </table><p>
 </body>
 </html>

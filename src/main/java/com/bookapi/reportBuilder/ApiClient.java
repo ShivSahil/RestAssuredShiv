@@ -39,7 +39,7 @@ public class ApiClient {
 						"Validating HTTP Status code:" + expectedStatus);
                 
                 WrappedAssert.assertJsonSchema(response, "schemas/"+schemaFileName,
-			            "Validating JSON schema for GET " + endpoint);
+			            "Validating JSON schema for POST " + endpoint);
 			 
                 break;
 
@@ -53,7 +53,7 @@ public class ApiClient {
 						"Validating HTTP Status code:" + expectedStatus);
                 
                 WrappedAssert.assertJsonSchema(response, "schemas/"+schemaFileName,
-			            "Validating JSON schema for GET " + endpoint);
+			            "Validating JSON schema for PUT " + endpoint);
 			 
                 break;
 
@@ -67,7 +67,7 @@ public class ApiClient {
 						"Validating HTTP Status code:" + expectedStatus);
                 
                 WrappedAssert.assertJsonSchema(response, "schemas/"+schemaFileName,
-			            "Validating JSON schema for GET " + endpoint);
+			            "Validating JSON schema for DELETE " + endpoint);
 			 
                 break;
 
