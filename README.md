@@ -34,22 +34,55 @@ Validation is handled through the *WrappedAssert* class, which extends TestNG’
 4. Negative test cases are included as well.
 
 
-## Project Architecture
-- Each Request is covered under a test class file of same name. like *Get All Books* request test class name "GetAllBooksTest.java"
-- a test class can have multiple testcases.
-- POJO classes are used for serialization and deserialization
-- request chaining is where token from login is reused for various requests
-- dependsOnGroups and dependsOnMethods are used at approprite locations 
-- request chaining is also done to use newly created username and password in various requests
-- in each testcases, logs are written using WrappedReportLogger class. these logs are displayed on the console as well as the Extent Report!
-- ApiClient.class sends HTTP requests like GET, POST, PUT, DELETE and validates responses against expected status codes and JSON schemas. For validation inside ApiClient.class, I have used WrappedAssert.class.
-- In order to send request with different combination like request with Auth Token, request with Body And No Auth Token etc. I have implemented RequestBuilder.class. these spec builder method of RequestBuilder.class, can accept Path and Query Params as well.
-- @DataProvider was also used where multiple set of data needs to be entered.
-- loggin was done in testcases using WrappedReportLogger. Logs gets displayed on the console as well as on Reports.
-- assertion like validating assertEquals, assertNotNull, assertTrue are used in the testcases
-- assertion for Schema validation using *assertJsonSchema* and status code is build into ApiClient.class
-- schema for expected response is also placed in seperate folder
-- The *EnvConfigResolver.class* is responsible for dynamically resolving environment-specific configuration values (URL, email, and password) based on the active environment (qa, dev, or prod).
+## Project Structure & Implementation Details
+
+- Each API request is mapped to a corresponding **test class** with the same name.  
+  Example: *Get All Books* request is tested in **`GetAllBooksTest.java`**.
+
+- A single test class can contain **multiple test cases**.
+
+- **POJO classes** are used for serialization and deserialization of request and response bodies.
+
+### Request Chaining
+- The token generated from a **login request** is reused across subsequent requests.  
+- Newly created **username and password** are also reused in other requests.  
+- **`dependsOnGroups`** and **`dependsOnMethods`** annotations ensure proper test execution order.
+
+### Logging
+- Test cases use **`WrappedReportLogger`** for logging.  
+- Logs are displayed on the **console** and also captured in the **Extent Report**.
+
+### ApiClient
+- Handles sending HTTP requests: `GET`, `POST`, `PUT`, `DELETE`.  
+- Validates responses against:
+  - **Status codes**  
+  - **JSON schemas**  
+- Internally uses **`WrappedAssert`** for assertions.
+
+### RequestBuilder
+- Provides reusable request specifications.  
+- Supports different combinations such as:
+  - With Auth Token  
+  - With Body (without Auth Token)  
+- Accepts **path parameters** and **query parameters**.
+
+### Data-Driven Testing
+- Implemented using **`@DataProvider`** to supply multiple input sets for test cases.
+
+### Assertions
+- Standard assertions: `assertEquals`, `assertNotNull`, `assertTrue`.  
+- Schema validation (`assertJsonSchema`) and status code checks are built into **`ApiClient`**.
+
+### Schema Management
+- JSON Schemas for expected responses are stored in a **dedicated folder** for better organization.
+
+### EnvConfigResolver
+- The **`EnvConfigResolver`** class dynamically resolves environment-specific configurations:
+  - `URL`  
+  - `Email`  
+  - `Password`  
+- Supported environments: **QA**, **DEV**, **PROD**.
+
 
 ## FrameWork structure
 ```
