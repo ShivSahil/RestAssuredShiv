@@ -26,16 +26,31 @@
 ## FrameWork structure
 ```
 src/main/java/
-│└──com/bookapi/assertions/
-││└──WrappedAssert.java #extends TestNG’s built-in assertion capabilities by wrapping them with Log4j logging, ExtentReports integration
-|└──com/bookapi/logs/
-││└──ConsoleColors.java #provides ANSI escape codes to add colors, bold, underline, and background styles to console output for better readability
-││└──WrappedReportLogger.java #wraps Log4j and ExtentReports to log messages with console colors and reporting integration
-|└──com/bookapi/pojo/request/  #Request POJO classes
-|└──com/bookapi/pojo/response/  #Response POJO classes
-|└──com/bookapi/report/
-||└──ExtentFactory.java # ExtentReports setu by integrating with ITestListener to generate HTML test reports.
-|└──com.bookapi.reportBuilder
-
+└── com/bookapi/
+    ├── assertions/
+    │   └── WrappedAssert.java          #  TestNG’s built-in assertion capabilities by wrapping them with Log4j + extent repor
+    │
+    │── endPoints/
+    │   └── EndPoints.java              # holds all API endpoint paths as constants for easy reuse and maintainability.
+    │
+    ├── logs/
+    │   ├── ConsoleColors.java          # #provides colored console output for better readability
+    │   └── WrappedReportLogger.java    # wraps Log4j + ExtentReports to log messages with console colors and reporting integration
+    │
+    ├── pojo/
+    │   ├── request/                    # Request POJO classes
+    │   └── response/                   # Response POJO classes
+    │
+    ├── report/
+    │   └── ExtentFactory.java          # ExtentReports setup by integrating with ITestListener to generate HTML test report
+    │
+    └── reportBuilder/                  
+    │   └── ApiClient.java              # sends HTTP requests and validates responses against expected status codes and JSON schemas.
+    │   └── RequestBuilder.java         # reusable RestAssured request specifications with optional auth, body, and parameters.
+    │
+    │── utils/
+    │   └── ConfigurationManager.java   # access config.properties file
+    │   └── DataGenerator.java          # provides utility methods to generate random test data such as email, ID, password, and year.
+    │   └── EnvConfigResolver.java      # dynamically loads environment-specific configuration based on the selected environment
       
 
