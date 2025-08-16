@@ -54,7 +54,8 @@ src/main/java/
     │   └── EnvConfigResolver.java      # dynamically loads environment-specific configuration based on the selected environment
     │
 
-src/main/resources/schemas/             # contains all the response schemas which are used ApiClient.java for validation
+src/main/resources/
+└── schemas/                            # contains all the response schemas which are used ApiClient.java for validation
 └── log4j2.xml                          # log4j file
 
 
