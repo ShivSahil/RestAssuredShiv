@@ -22,6 +22,7 @@
 3. to see report. Reports are generated with a time stamped named for easy identification
    cd RestAssuredShiv/report
 
+## [Download Sample Report](./report/Sample_15_August_10_pm_37_13_Report.html)
 
 ## FrameWork structure
 ```
