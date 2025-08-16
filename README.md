@@ -37,6 +37,10 @@ Validation is handled through the *WrappedAssert* class, which extends TestNG’
 ## Project Architecture
 - Each Request is covered under a test class file of same name. like *Get All Books* request test class name "GetAllBooksTest.java"
 - a test class can have multiple testcases.
+- POJO classes are used for serialization and deserialization
+- request chaining is where token from login is reused for various requests
+- dependsOnGroups and dependsOnMethods are used at approprite locations 
+- request chaining is also done to use newly created username and password in various requests
 - in each testcases, logs are written using WrappedReportLogger class. these logs are displayed on the console as well as the Extent Report!
 - ApiClient.class sends HTTP requests like GET, POST, PUT, DELETE and validates responses against expected status codes and JSON schemas. For validation inside ApiClient.class, I have used WrappedAssert.class.
 - In order to send request with different combination like request with Auth Token, request with Body And No Auth Token etc. I have implemented RequestBuilder.class. these spec builder method of RequestBuilder.class, can accept Path and Query Params as well.
