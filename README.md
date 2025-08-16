@@ -22,7 +22,7 @@
 3. to see report. Reports are generated with a time stamped named for easy identification
    cd RestAssuredShiv/report
 
-## sample Report
+## Sample Report
 [Download Sample Report](./report/Sample_15_August_10_pm_37_13_Report.html)
 
 ## Validation Covered
@@ -32,6 +32,14 @@ Validation is handled through the *WrappedAssert* class, which extends TestNG’
 2. Schema validation is built into the *ApiClient* class.
 3. Status code validation is also built into the *ApiClient* class.
 4. Negative test cases are included as well.
+
+
+## Project Architecture
+- Each Request is covered under a test class file of same name. like *Get All Books* request test class name "GetAllBooksTest.java"
+- a test class can have multiple testcases.
+- in each testcases, logs are written using WrappedReportLogger class. these logs are displayed on the console as well as the Extent Report!
+- ApiClient.class sends HTTP requests like GET, POST, PUT, DELETE and validates responses against expected status codes and JSON schemas. For validation inside ApiClient.class, I have used WrappedAssert.class.
+- In order to send request with different combination like request with Auth Token, request with Body And No Auth Token etc. I have implemented RequestBuilder.class. these spec builder method of RequestBuilder.class, can accept Path and Query Params as well.
 
 ## FrameWork structure
 ```
