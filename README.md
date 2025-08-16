@@ -52,5 +52,16 @@ src/main/java/
     │   └── ConfigurationManager.java   # access config.properties file
     │   └── DataGenerator.java          # provides utility methods to generate random test data such as email, ID, password, and year.
     │   └── EnvConfigResolver.java      # dynamically loads environment-specific configuration based on the selected environment
-      
+    │
 
+src/main/resources/schemas/             # contains all the response schemas which are used ApiClient.java for validation
+└── log4j2.xml                          # log4j file
+
+
+src/test/java/
+└── com/bookapi/testcases/
+    ├── assertions/                     # All the testcases are written here
+
+config.properties                       
+pom.xml                                     
+testng.xml
