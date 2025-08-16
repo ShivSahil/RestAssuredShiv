@@ -91,6 +91,12 @@ Validation is handled through the *WrappedAssert* class, which extends TestNG’
 - Negative testcases are covered.
 - validation of Body, header, status code, schema is also covered.
 - @DataProvider is to supply multiple input sets for test cases.
+-  environment-specific configurations like URL, email and password are resolved dynamically
+
+## List of issues
+-  I am  unable to create *Invalid JSON Request Body** which could give us 422 status using POJO classs .
+  ![Report Screenshot](readMeScreenshot/422.png)
+   Instead of relying on serialization, just build the string yourself
 
 ## FrameWork structure
 ```
