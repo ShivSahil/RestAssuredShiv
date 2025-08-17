@@ -16,10 +16,11 @@
    ```bash
    git clone https://github.com/your-username/bookapi-tests.git
    cd RestAssuredShiv
-2. Run the Scenarios
+2. set env as QA in config file using, env=QA
+3. Run the Scenarios
    ```bash
    mvn clean test
-3.  Reports are generated with a time stamped named for easy identification
+4.  Reports are generated with a time stamped named for easy identification
    cd RestAssuredShiv/report
 
 ## Sample Report
@@ -92,6 +93,7 @@ Validation is handled through the *WrappedAssert* class, which extends TestNG’
 - validation of Body, header, status code, schema is also covered.
 - @DataProvider is to supply multiple input sets for test cases.
 -  environment-specific configurations like URL, email and password are resolved dynamically
+-  yml file for **gitHub action** has already been added
 
 ## List of issues
 -  I am  unable to create *Invalid JSON Request Body** which could give us 422 status using POJO classs .
@@ -102,6 +104,8 @@ Validation is handled through the *WrappedAssert* class, which extends TestNG’
 - If a user tries to retrieve all books with an incorrect token, they receive a 403 Forbidden error instead of a 401 Unauthorized.
 - When attempting to add a new book with an existing ID, the server returns a 500 Internal Server Error, indicating it cannot handle duplicate IDs.
 - There is currently no functionality to delete users, making test data cleanup impossible.
+-  ![Github actions](readMeScreenshot/githubActions.png) since API provided to me was on local machine. I hosted it on my local machine using "ssh -R 80:127.0.0.1:8000 serveo.net". after that I added the temporary URL to my config file.
+  Whenever I am pushing my code to gitHub, execution is trigerring automtically. Although this is not correct CI pipeline. A correct CI pipeline, starts executing when someone checks in code to Dev repo and not to QA repo. 
 
 
 ## FrameWork structure
