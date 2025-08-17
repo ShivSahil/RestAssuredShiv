@@ -104,8 +104,9 @@ Validation is handled through the *WrappedAssert* class, which extends TestNG’
 - If a user tries to retrieve all books with an incorrect token, they receive a 403 Forbidden error instead of a 401 Unauthorized.
 - When attempting to add a new book with an existing ID, the server returns a 500 Internal Server Error, indicating it cannot handle duplicate IDs.
 - There is currently no functionality to delete users, making test data cleanup impossible.
--  ![Github actions](readMeScreenshot/githubActions.png) since API provided to me was on local machine. I hosted it on my local machine using "ssh -R 80:127.0.0.1:8000 serveo.net". after that I added the temporary URL to my config file.
-  Whenever I am pushing my code to gitHub, execution is trigerring automtically. Although this is not correct CI pipeline. A correct CI pipeline, starts executing when someone checks in code to Dev repo and not to QA repo. 
+- since API provided to me was on local machine. I hosted it on my local machine using "ssh -R 80:127.0.0.1:8000 serveo.net". after that I added the temporary URL to my config file.
+Whenever I am pushing my code to gitHub, execution is trigerring automtically. Although this is not correct CI pipeline. A correct CI pipeline, starts executing when someone checks in code to Dev repo and not to QA repo.
+ ![Github actions](readMeScreenshot/githubActions.png)
 
 
 ## FrameWork structure
