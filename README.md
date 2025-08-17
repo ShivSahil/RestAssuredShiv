@@ -1,4 +1,4 @@
-<img width="833" height="652" alt="image" src="https://github.com/user-attachments/assets/8bd3db32-dc86-49f1-8130-69b09ff0f10c" /># RestAssured Framework for testing Book API (By Shiv Sahil Guleri)
+RestAssured Framework for testing Book API (By Shiv Sahil Guleri)
 
 ## How to Run the Tests
 
