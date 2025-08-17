@@ -107,7 +107,6 @@ Validation is handled through the *WrappedAssert* class, which extends TestNG’
 - since API provided to me was on local machine. I hosted it on my local machine using "ssh -R 80:127.0.0.1:8000 serveo.net". after that I added the temporary URL to my config file.
 Whenever I am pushing my code to gitHub, execution is trigerring automtically on **github actions**. Although this is not correct CI pipeline. A correct CI pipeline, starts executing when someone checks in code to Dev repo and not to QA repo.
  ![Github actions](readMeScreenshot/githubActions.png)
- ![locally hosted](readMeScreenshot/locallyHosted.png)
 
 
 ## FrameWork structure
