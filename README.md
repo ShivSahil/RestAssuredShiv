@@ -1,4 +1,4 @@
-# RestAssured Framework for testing Book API (By Shiv Sahil Guleri)
+<img width="833" height="652" alt="image" src="https://github.com/user-attachments/assets/8bd3db32-dc86-49f1-8130-69b09ff0f10c" /># RestAssured Framework for testing Book API (By Shiv Sahil Guleri)
 
 ## How to Run the Tests
 
@@ -105,8 +105,9 @@ Validation is handled through the *WrappedAssert* class, which extends TestNG’
 - When attempting to add a new book with an existing ID, the server returns a 500 Internal Server Error, indicating it cannot handle duplicate IDs.
 - There is currently no functionality to delete users, making test data cleanup impossible.
 - since API provided to me was on local machine. I hosted it on my local machine using "ssh -R 80:127.0.0.1:8000 serveo.net". after that I added the temporary URL to my config file.
-Whenever I am pushing my code to gitHub, execution is trigerring automtically. Although this is not correct CI pipeline. A correct CI pipeline, starts executing when someone checks in code to Dev repo and not to QA repo.
+Whenever I am pushing my code to gitHub, execution is trigerring automtically on **github actions**. Although this is not correct CI pipeline. A correct CI pipeline, starts executing when someone checks in code to Dev repo and not to QA repo.
  ![Github actions](readMeScreenshot/githubActions.png)
+ ![locally hosted](readMeScreenshot/locallyHosted.png)
 
 
 ## FrameWork structure
