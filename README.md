@@ -19,11 +19,11 @@
 2. Run the Scenarios
    ```bash
    mvn clean test
-3. to see report. Reports are generated with a time stamped named for easy identification
+3.  Reports are generated with a time stamped named for easy identification
    cd RestAssuredShiv/report
 
 ## Sample Report
-[Download Sample Report](./report/Sample_15_August_10_pm_37_13_Report.html)
+**[Download Sample Report](./report/Sample_15_August_10_pm_37_13_Report.html)**
 
 ## Validation Covered
 Validation is handled through the *WrappedAssert* class, which extends TestNG’s built-in assertions with Log4j and ExtentReports integration.
@@ -91,6 +91,18 @@ Validation is handled through the *WrappedAssert* class, which extends TestNG’
 - Negative testcases are covered.
 - validation of Body, header, status code, schema is also covered.
 - @DataProvider is to supply multiple input sets for test cases.
+-  environment-specific configurations like URL, email and password are resolved dynamically
+
+## List of issues
+-  I am  unable to create *Invalid JSON Request Body** which could give us 422 status using POJO classs .
+  ![Report Screenshot](readMeScreenshot/422.png)
+   Instead of relying on serialization, I build the string manually.
+- When incorrect credentials are provided during login, the server responds with a 400 Bad Request instead of a 401 Unauthorized.
+- During the login request validation, I found that the request is processed regardless of the provided user ID.
+- If a user tries to retrieve all books with an incorrect token, they receive a 403 Forbidden error instead of a 401 Unauthorized.
+- When attempting to add a new book with an existing ID, the server returns a 500 Internal Server Error, indicating it cannot handle duplicate IDs.
+- There is currently no functionality to delete users, making test data cleanup impossible.
+
 
 ## FrameWork structure
 ```
