@@ -86,7 +86,9 @@ Validation is handled through the *WrappedAssert* class, which extends TestNG’
 
 
 ## Testing Strategy 
-- request chainging was done for shairing token, new email, new pwd.
+- request chaining was done for shairing token, new email, new pwd.
+- `**POSTIVE WORKFLOW** health Check up>> creation of new user >> login to get access token >> get all books >> create new Book >> Validating of new book is displayed in the list of all the books >> getting newly created book by ID >> update newly added book >> check this newly added book in list of all the book >> Delete newly added book`
+- `**NEGATIVE TESTCASES** Validating creation of new user with existing email, Login using incorrect _SET OF_ credentails, Validating if books are not displayed when invalid token used, Validating if books are not displayed when NO token used, Validating user unable to search a book with incorrect ID, try to twice delete a book, unable to search deleted book, Incorrectly formatted JSON file validation, validating using expired and incorrect token`
 - POJO classes used for searlization and desearlization
 - in each testcases Logging was done. this outputed details on Console and report
 - Negative testcases are covered.
