@@ -14,6 +14,7 @@
 			<class name="com.bookapi.testcases.UpdateBookTest" />
 			<class name="com.bookapi.testcases.DeleteBookTest" />
 			<class name="com.bookapi.testcases.IncorrectJsonFormat" />
+			<class name="com.bookapi.testcases.TokenTest" />
 		</classes>
 	</test>
 </suite>
