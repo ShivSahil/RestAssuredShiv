@@ -24,7 +24,7 @@ RestAssured Framework for testing Book API (By Shiv Sahil Guleri)
    cd RestAssuredShiv/report
 
 ## Sample Report
-**[Download Sample Report](./report/Sample_15_August_10_pm_37_13_Report.html)**
+**[Download Sample Report](readMeScreenshot/sampleReport.html)**
 
 ## Validation Covered
 Validation is handled through the *WrappedAssert* class, which extends TestNG’s built-in assertions with Log4j and ExtentReports integration.
